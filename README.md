@@ -16,11 +16,15 @@
       - The final tables or collections that will be used in the production database
 
 
-### Project Report
+# Project Report
   - Submit a final technical report with the above information and steps required to reproduce your ETL process
 
 ## Step 1: Identify data sources
-  
+  1. [Frontiers in Neuroscience Journal Articles](https://www.kaggle.com/markoarezina/frontiers-in-neuroscience-articles)
+      - Articles and metadata from the Frontiers in Neuroscience journal series
+      - This data set can be downloaded as a csv file from Kaggle
+      - The file from Kaggle is 238 MB, as such, this file was saved in the folder "data_large", which was marked in .gitignore
+  2. [World Health Organization: Mental health governance Data by country](http://apps.who.int/gho/data/node.main.MHPOLFIN?lang=en)
 
 ## Step 2: Extract: 
   - Original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc)
