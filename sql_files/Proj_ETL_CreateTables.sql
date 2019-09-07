@@ -1,13 +1,13 @@
 DROP TABLE IF EXISTS neuroscience;
-DROP TABLE IF EXISTS dept_emp;
+DROP TABLE IF EXISTS mental_health_pol;
 
 
 CREATE TABLE neuroscience (
-  title character varying(100) NOT NUll,
-  citation_author character varying(100) NOT NUll,
+  title character varying(250) NOT NUll,
+  citation_author character varying(350) NOT NUll,
   citation_date integer NOT NULL,
   cit_jrnl_title character varying(100) NOT NULL,
-  description character varying(100) NOT NULL,
+  description character varying(3000) NOT NULL,
   keywords character varying(100) NOT NULL
 );
 
