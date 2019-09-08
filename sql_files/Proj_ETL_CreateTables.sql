@@ -3,6 +3,7 @@ DROP TABLE IF EXISTS mental_health_pol;
 DROP TABLE IF EXISTS journal_data;
 
 CREATE TABLE neuroscience (
+  id serial PRIMARY KEY,
   title character varying(250),
   citation_author character varying(350),
   citation_date integer,
@@ -13,6 +14,7 @@ CREATE TABLE neuroscience (
 
 
 CREATE TABLE mental_health_pol (
+  id serial PRIMARY KEY,
   country character varying(100),
   year integer,
   govt_exp_mntlhos_per_totgovtexp_mntl_hlth float,
