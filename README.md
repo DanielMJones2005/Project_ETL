@@ -4,6 +4,7 @@
 - Daniel Jones and Will Copeland
 
 ## Project Proposal
+- The proposal of this project is to explore neuroscience articles at the frontier of the field and investigate whether or not there is a connection between advancement of the field and mental health policy
 
 ## Finding Data
   - Project must use 2 or more sources of data
@@ -25,15 +26,19 @@
       - This data set can be downloaded as a csv file from Kaggle
       - The file from Kaggle is 238 MB, as such, this file was saved in the folder "data_large", which was marked in .gitignore
   2. [World Health Organization: Mental health governance Data by country](http://apps.who.int/gho/data/node.main.MHPOLFIN?lang=en)
+  3. [Scimago Journal and Country Rank](https://www.scimagojr.com/journalrank.php?category=2801})
+
 
 ## Step 2: Extract: 
-  - Original data sources and how the data was formatted (CSV, JSON, pgAdmin 4, etc)
-  - Sources of data that were extract from
+   - Sources of data that were extract from
+      - all data was downloaded in the form of CSV files
+      - see Step 1 for data sources
 
 
 ## Step 3: Transform:
   - What data cleaning or transformation was required
   - Type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc)
+      - all data was downloaded in the form of CSV files
   
 ### Neuroscience Data
   - reviewed data columns
@@ -83,7 +88,6 @@
       - stand alone law mental health
       - stand alone policy plan mental health
 
-
 ### Journal Data
   - Only needed to clean titles for more appropriate naming for postgresql database/tables
   - Identified string lengths for the following fields to identify the character lengths for the postgresql database
@@ -93,5 +97,11 @@
 
 ## Step 4: Create database | Load:
   - The type of final production database to load the data into (relational or non-relational)
+      - Loaded the data into postgresql (relational) database
   - The final tables or collections that will be used in the production database
+      - neuroscience
+      - mental_health_pol
+      - journal_data
   - Final database, tables/collections, and why this was chosen
+      - database named Proj_ETL
+      - We chose postgresql to learn more about how to use postgresql with python
