@@ -16,10 +16,10 @@ CREATE TABLE mental_health_pol (
   country character varying(100),
   year integer,
   govt_exp_mntlhos_per_totgovtexp_mntl_hlth float,
-  std_alone_law_mntl_hlth character varying(3),
-  yr_law_enacted_latver float,
-  std_alone_polplan_mnth_hlth character varying(3),
-  pub_yr_polplan_latver float
+  std_alone_law_mntl_hlth character varying(50),
+  yr_law_enacted_latver integer,
+  std_alone_polplan_mnth_hlth character varying(50),
+  pub_yr_polplan_latver integer
 );
 
 

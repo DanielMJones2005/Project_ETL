@@ -1,1 +1,1 @@
-httpapps.who.intghodatanode.main.MHPOLFINlang=en
+http://apps.who.int/gho/data/node.main.MHPOLFIN?lang=en
