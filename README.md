@@ -55,6 +55,35 @@
      - description
      - keywords
 
+### Mental Data:
+  - reviewed data columns
+  - reviewed value counts of columns
+     - Stand-alone law for mental health
+     - Stand-alone policy or plan for mental health
+     - Publication year of the policy or plan (latest revision)
+  - reviewed describe data of column
+     - Government expenditures on mental hospitals as a percentage of total government expenditures on mental health (%)
+  - decided to keep all columns
+  - made copy of mental df as mental df 2
+    - to enable transformation/cleaning of data and have an original version of data
+  - split the country and year values from the column “"Country; Year"
+    - And created separate columns for country and year
+  - replaced NaN values with zero where applicable
+  - created new columns with names appropriate for postgresql database/tables created
+  - for column “Year the law was enacted (latest revision)”
+    - This column is seen as an integer column for year
+    - There were 2 values of “No” and 1 value of “Yes”
+    - The “No” and “Yes” values were changed to 0 because the purpose of this column was for an integer year value
+	This data anomaly can be reviewed later to determine another approach
+  - for column “"Publication year of the policy or plan (latest revision)”
+    - Created a new column based on the above column for naming that is more appropriate for postgresql database/tables and converted to integer value
+  - dropped the original column names from the mental df 2 to allow push to postgresql
+  - identified string lengths for the following fields to identify the character lengths for the postgresql database
+      - country
+      - stand alone law mental health
+      - stand alone policy plan mental health
+
+
 ### Journal Data
   - Only needed to clean titles for more appropriate naming for postgresql database/tables
   - Identified string lengths for the following fields to identify the character lengths for the postgresql database
