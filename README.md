@@ -35,6 +35,27 @@
   - What data cleaning or transformation was required
   - Type of transformation needed for this data (cleaning, joining, filtering, aggregating, etc)
   
+### Neuroscience Data
+  - reviewed data columns
+  - reviewed value counts of columns
+     - citation_journal_title
+     - citation_date
+     - citation_author_institution
+  - identified columns of interest
+     - title
+     - citation_author
+     - citation_date
+     - citation_journal_title
+     - description
+     - keywords
+  - Identified string lengths for the following fields to identify the character lengths for the postgresql database
+     - title
+     - citation_author
+     - citation_journal_title
+     - description
+     - keywords
+
+  
 
 ## Step 4: Create database | Load:
   - The type of final production database to load the data into (relational or non-relational)
