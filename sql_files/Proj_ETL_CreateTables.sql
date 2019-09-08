@@ -1,6 +1,6 @@
 DROP TABLE IF EXISTS neuroscience;
 DROP TABLE IF EXISTS mental_health_pol;
-
+DROP TABLE IF EXISTS journal_data;
 
 CREATE TABLE neuroscience (
   title character varying(250),
@@ -22,7 +22,19 @@ CREATE TABLE mental_health_pol (
   pub_yr_polplan_latver integer
 );
 
+CREATE TABLE journal_data (
+  title character varying(250),
+  rank integer,
+  tot_docs integer,
+  tot_refs integer,
+  citable_docs integer,
+  country character varying(100)  
+);
+
+
+
 
 SELECT * FROM neuroscience
-SELECT * FROM mental_health_pol;
+SELECT * FROM mental_health_pol
+SELECT * FROM journal_data
 
