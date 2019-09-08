@@ -55,7 +55,12 @@
      - description
      - keywords
 
-  
+### Journal Data
+  - Only needed to clean titles for more appropriate naming for postgresql database/tables
+  - Identified string lengths for the following fields to identify the character lengths for the postgresql database
+     - title
+     - country
+
 
 ## Step 4: Create database | Load:
   - The type of final production database to load the data into (relational or non-relational)
